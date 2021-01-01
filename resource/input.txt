@@ -1,0 +1,27 @@
+Node:
+0 N N
+1 T N
+2 N T
+3 C N
+4 T T
+5 T T
+6 N C
+7 C T
+8 T C
+end
+Relation:
+0 1
+0 2
+1 3
+1 4
+2 5
+2 6
+3 0
+3 7
+4 7
+5 8
+6 0
+6 8
+7 2
+8 1
+end
