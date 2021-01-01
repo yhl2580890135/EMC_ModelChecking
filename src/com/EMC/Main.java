@@ -6,18 +6,26 @@ import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
 
     static List<Node> nodes;
 
     public static void main(String[] args) {
-        // write your code here
-//        System.out.println("hello");
-
-//        createStateMachine1_();
+        //create state machine
         createStateMachine1();
-        DFS(nodes.get(0));
+//        DFS(nodes.get(0));
+
+        //input expression and run model checker
+        Scanner sc = new Scanner(System.in);
+        String expression = sc.nextLine();
+        parseExpression(expression);
+
+    }
+
+    private static void parseExpression(String expression) {
+
     }
 
     private static void DFS(Node node) {
